@@ -1,0 +1,47 @@
+feature_selection__k: !!python/object/apply:numpy._core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - i8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  DQAAAAAAAAA=
+regressor__learning_rate: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  uR6F61G4rj8=
+regressor__max_depth: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  BgAAAAAAAAA=
+regressor__n_estimators: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  tQAAAAAAAAA=
+regressor__num_leaves: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  DAAAAAAAAAA=
+scaler: null

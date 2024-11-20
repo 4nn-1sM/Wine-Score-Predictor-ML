@@ -1,0 +1,56 @@
+clustering__init: k-means++
+clustering__n_clusters: !!python/object/apply:numpy._core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - i8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  CAAAAAAAAAA=
+regressor__learning_rate: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  4noUrkfhyj8=
+regressor__max_depth: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  BwAAAAAAAAA=
+regressor__n_estimators: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  UQAAAAAAAAA=
+regressor__num_leaves: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  AwAAAAAAAAA=
+scaler: !!python/object:sklearn.preprocessing._data.RobustScaler
+  _sklearn_version: 1.5.2
+  copy: true
+  quantile_range: !!python/tuple
+  - 25.0
+  - 75.0
+  unit_variance: false
+  with_centering: true
+  with_scaling: true

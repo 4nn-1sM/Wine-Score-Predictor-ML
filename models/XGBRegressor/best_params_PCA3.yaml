@@ -1,0 +1,51 @@
+pca__n_components: !!python/object/apply:numpy._core.multiarray.scalar
+- &id002 !!python/object/apply:numpy.dtype
+  args:
+  - i8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  BwAAAAAAAAA=
+scaler: null
+xgbreg__alpha: !!python/object/apply:numpy._core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  AAAAAAAA0D8=
+xgbreg__lambda: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  AAAAAAAA6D8=
+xgbreg__learning_rate: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  mpmZmZmZuT8=
+xgbreg__max_depth: !!python/object/apply:numpy._core.multiarray.scalar
+- *id002
+- !!binary |
+  BgAAAAAAAAA=
+xgbreg__n_estimators: !!python/object/apply:numpy._core.multiarray.scalar
+- *id002
+- !!binary |
+  MwAAAAAAAAA=

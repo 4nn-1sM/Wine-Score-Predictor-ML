@@ -1,0 +1,30 @@
+pca__n_components: !!python/object/apply:numpy._core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - i8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  BAAAAAAAAAA=
+regressor__max_depth: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  BQAAAAAAAAA=
+regressor__min_samples_leaf: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  CAAAAAAAAAA=
+regressor__min_samples_split: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  DAAAAAAAAAA=
+scaler: null

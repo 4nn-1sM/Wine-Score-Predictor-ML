@@ -1,0 +1,60 @@
+clustering__init: k-means++
+clustering__n_clusters: !!python/object/apply:numpy._core.multiarray.scalar
+- &id002 !!python/object/apply:numpy.dtype
+  args:
+  - i8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  CQAAAAAAAAA=
+scaler: !!python/object:sklearn.preprocessing._data.RobustScaler
+  _sklearn_version: 1.5.2
+  copy: true
+  quantile_range: !!python/tuple
+  - 25.0
+  - 75.0
+  unit_variance: false
+  with_centering: true
+  with_scaling: true
+xgbreg__alpha: !!python/object/apply:numpy._core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  mpmZmZmZ6T8=
+xgbreg__lambda: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  AAAAAAAA4D8=
+xgbreg__learning_rate: !!python/object/apply:numpy._core.multiarray.scalar
+- *id001
+- !!binary |
+  NDMzMzMzwz8=
+xgbreg__max_depth: !!python/object/apply:numpy._core.multiarray.scalar
+- *id002
+- !!binary |
+  AwAAAAAAAAA=
+xgbreg__n_estimators: !!python/object/apply:numpy._core.multiarray.scalar
+- *id002
+- !!binary |
+  RwAAAAAAAAA=
