@@ -77,8 +77,6 @@ Cuando la app predice la puntuación de un vino, lo clasifica en uno de los sigu
 # Cierre inspirador
 st.write("✨ **Introduce las características del vino y descubre en qué rango de calidad podría encontrarse. ¡Que comience la experiencia enológica!** 🍷")
 
-# Selección de país
-country = st.selectbox("País de origen", options= ['España']) #['Francia', 'Italia', 'España', 'Portugal']
 
 # Selección de estilo de vino
 style = st.radio("Estilo de vino", options=style_dict)
