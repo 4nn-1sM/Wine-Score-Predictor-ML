@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 import sys
 import os
-sys.path.append(os.path.abspath('C:/Users/anusk/Documents/bootcamp/DSBootcamp_Ana/ML_project/wines_ML/src'))
+sys.path.append(os.path.abspath('../src'))
 import utils  ### TODO: Intentar que sea relative path
 
 
@@ -14,11 +14,12 @@ model = pickle.load(open('../models/final_model.pkl', 'rb'))
 # Cargar diccionario de opciones para botones
 dict_clasif = pickle.load(open("../src/options_dict.pkl", 'rb'))
 style_dict = dict_clasif["style"].keys()
+style_dict = list(style_dict)[:-1]
 variety_dict = dict_clasif["style"]
 winery_dict = dict_clasif["wineries"]
 denominacion_dict = dict_clasif["denominacion"]
 aging_dict = dict_clasif["aging"]
-
+aging_dict.append("Ninguna de las anteriores")
 
 
 # Configuración de la página
@@ -83,7 +84,7 @@ country = st.selectbox("País de origen", options= ['España']) #['Francia', 'It
 style = st.radio("Estilo de vino", options=style_dict)
 winery = st.selectbox("Bodega", options= list(winery_dict))
 if style:
-    variety = st.selectbox("Variedad de uva", options= list(variety_dict[style]))
+    variety = st.selectbox("Variedad de uva", options= variety_dict[style])
 denominacion = st.selectbox("Denominación de origen / Denominación geográfica", options= list(denominacion_dict))
 aging = st.radio("Clasificación", options= list(aging_dict))
 year = st.slider("Año de cosecha", min_value=1900, max_value=2023, step=1)
