@@ -1,4 +1,7 @@
+![wine_blind_tasting](./docs/imagen_readme.png)
+
 # 🍷 Wine Score Predictor
+
 
 **¿Qué puntuación recibiría un vino en una cata a ciegas?** Descúbrelo con esta aplicación interactiva desarrollada en Streamlit. Este proyecto utiliza machine learning para predecir la valoración aproximada que podría obtener un vino basándose en sus características principales.
 
