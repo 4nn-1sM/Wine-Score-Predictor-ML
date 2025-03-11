@@ -187,13 +187,9 @@ def entrenar_y_guardar_modelos(pipes, params, X_train, y_train, X_test, y_test, 
         # Entrenar el modelo
         resultado = entrenar_modelo(pipe, param, X_train, y_train, X_test, y_test, modelo, decision)
 
-        # Guardar los resultados
-        # Guardar train y test en CSV
-        resultado["train_results"].to_csv(f"../models/{estimator}/train_results_{modelo}{decision}.csv", index=False)
-        print(f"Resultados train del modelo {modelo} guardados en CSV.")
-
-        resultado["test_results"].to_csv(f"../models/{estimator}/test_results_{modelo}{decision}.csv", index=False)
-        print(f"Resultados test del modelo {modelo} guardados en CSV.")
+        # Imprimir en pantalla los resultados
+        print("Resultados train para el modelo", modelo, ":", resultado["train_results"])
+        print("Resultados train para el modelo", modelo, ":", resultado["test_results"])
 
         # Guardar el mejor modelo en PICKLE
         pickle.dump(resultado["best_estimator"], open(f"../models/{estimator}/best_estimator_{modelo}{decision}.pkl", "wb"))
@@ -202,10 +198,6 @@ def entrenar_y_guardar_modelos(pipes, params, X_train, y_train, X_test, y_test, 
         # Guardar los mejores parámetros en YAML
         yaml.dump(resultado["best_params"], open(f"../models/{estimator}/best_params_{modelo}{decision}.yaml", "w"), default_flow_style=False, allow_unicode=True)
         print(f"Best params del modelo {modelo} guardados en YAML.")
-
-        # Guardar el mejor score en CSV
-        pd.DataFrame({"best_score": [resultado["best_score"]]}, index=[f'{modelo}{decision}']).to_csv(f"../models/{estimator}/best_score_{modelo}{decision}.csv")
-        print(f"Best score del modelo {modelo} guardado en CSV.")
         
         # Incrementar el contador de decisión
         decision += 1

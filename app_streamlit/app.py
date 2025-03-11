@@ -106,7 +106,9 @@ if st.button("Predecir valoración"):
     prediction = model.predict(input_data)
     pred_num= prediction[0]   
     print("Valor", pred_num)
-    category = utils.categorize_points(pred_num)
+    pred_round = round(pred_num)
+    print("Valor redondeado", pred_round)
+    category = utils.categorize_points(pred_round)
     print("Categoría ", category)
 
 
